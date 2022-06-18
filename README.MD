@@ -7,7 +7,7 @@
 ## Start:
 
 ```sh
-$ git clone git@github.com:caioagiani/telegram-bot.git
+$ git clone 
 
 $ cd telegram-bot
 
