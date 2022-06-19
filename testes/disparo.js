@@ -1,8 +1,8 @@
 const axios = require('axios')
-const countReq = 30;
+const countReq = 10;
 const reqs = []
 
-for (let i = 0; i <= countReq; i++) {
+for (let i = 1; i <= countReq; i++) {
     reqs.push(axios.post("http://localhost:3333/sendMessage", {
         // "id": "5516988674537",
         "message": `${i} \nOla!`
