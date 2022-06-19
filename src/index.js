@@ -13,9 +13,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.post("/sendMessage", async (req, res) => {
-  const { message } = req.body;
+  const { id, message } = req.body;
   try {
-    queue.add({ id: "730796412", message: message });
+    queue.add({ id: id, message: message });
     // await bot.sendMessage("", message);
     console.log("Enviando para a fila a menssagem: \n", message);
     res.status(200).json({ message: "ok" });

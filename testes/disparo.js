@@ -4,7 +4,7 @@ const reqs = []
 
 for (let i = 1; i <= countReq; i++) {
     reqs.push(axios.post("http://localhost:3333/sendMessage", {
-        // "id": "5516988674537",
+        "id": `730796412`,
         "message": `${i} \nOla!`
     }))
 }
